@@ -2,14 +2,14 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.messagebox import showinfo, showerror, askyesno
 from tkinter import filedialog as fd
+
 from ttkthemes import ThemedStyle
 from ttkthemes import ThemedTk
+
 import qrcode
 import cv2
 
 
-
-        
         
 def generate_qrcode():
     qrcode_data = str(data_entry.get())
@@ -70,9 +70,6 @@ def detect_qrcode():
                    '\nThe following could be ' \
                     'the cause:\n->Wrong image file\n' \
                     'Make sure the image file is a valid QRCode')
-
-
-
 
 
 window = ThemedTk(theme="equilux")
